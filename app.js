@@ -218,8 +218,8 @@ function renderChecklist() {
       <div class="grid-4">
         ${card('ANALYST CONSENSUS', recTxt, recDetail !== '—' ? recDetail : '', recCls)}
         ${card('LAST EPS ACTUAL',   earnings.length ? fmt(earnings[0].actual,'$','',2)   : '—')}
-        ${card('LAST EPS ESTIMATE', earnings.length ? fmt(earnings[0].estimate,'$','',2') : '—')}
-        ${card('LAST SURPRISE',     earnings.length ? fmt(earnings[0].surprise,'$','',2') : '—', surpriseTxt, surpriseCls)}
+        ${card('LAST EPS ESTIMATE', earnings.length ? fmt(earnings[0].estimate,'$','',2) : '—')}
+        ${card('LAST SURPRISE',     earnings.length ? fmt(earnings[0].surprise,'$','',2) : '—', surpriseTxt, surpriseCls)}
       </div>
       ${earnings.length > 1 ? `
       <div class="divider"></div>
